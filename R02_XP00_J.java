@@ -1,3 +1,9 @@
+/****************************************************************************** 
+*  Compilation:  javac R02_XP00_J.java 
+*  Execution:    java R02_XP00_J.java 
+*  Sees if file is able to be deleted and if not it notifies user 
+ * ******************************************************************************/
+ 
 import java.io.*; 
 
 	public class R02_XP00_J {

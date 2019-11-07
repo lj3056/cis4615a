@@ -1,3 +1,9 @@
+/****************************************************************************** 
+*  Compilation:  javac R04_STRO3_J.java 
+*  Execution:    java R04_STRO3_J.java
+*  Non character data should not be inputted into string 
+ * ******************************************************************************/
+
 public class R04_STR03_J {
 	public static void main(String args[]) {
 		System.out.println("Data properly casted to string");
