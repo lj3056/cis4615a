@@ -1,22 +1,25 @@
-/* Non Compliant */
+import java.io.*; 
 
-public void deleteFile(){
- 
-  File someFile = new File("someFileName.txt");
-  // Do something with someFile
-  someFile.delete();
- 
-}
+	public class R02_XP00_J {
+	public static void main(String args[]) {
+		System.out.println("Will the file be deleted after creation?");
+	deleteFile();
 
-/* Compliant */
+	}
 
+	public static void deleteFile() {
+		File someFile = new File("hello.txt");
+		//Do something with someFile
+		System.out.println(someFile + " created file object");
+		
+		if (!someFile.delete()) {
+			//handle failure to delete file
+		System.out.println(someFile + " NOT Deleted");
+	}
+	else
+	{
+		System.out.println(someFile + " Deleted");
+	}
+	}
 
-public void deleteFile(){
- 
-  File someFile = new File("someFileName.txt");
-  // Do something with someFile
-  if (!someFile.delete()) {
-    // Handle failure to delete the file
-  }
- 
-}
+	}
